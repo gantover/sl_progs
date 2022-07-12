@@ -64,9 +64,10 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
+	/* wlp2s0 for gentoo */
 	/* function format          argument */
-	{ netspeed_tx, "[ﲗ %s] ", "wlp2s0" },
-	{ wifi_essid, "[ %s] ", "wlp2s0" },
+	{ netspeed_tx, "[ﲗ %s] ", "wlan0" },
+	{ wifi_essid, "[ %s] ", "wlan0" },
 	{ battery_perc, "[BAT %s%] ", "BAT0"  },
 	{ datetime, "%s", "%F %T" },
 };
